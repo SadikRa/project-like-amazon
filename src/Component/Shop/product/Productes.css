@@ -1,0 +1,13 @@
+.card-itmes img {
+  width: 286px;
+  height: 286px;
+  margin: 7px;
+  border-radius: 8px;
+}
+.btn-card{
+    width: 100%;
+    background-color: #FFE0B3;
+    color: black;
+    position: absolute;
+    bottom: ;
+}

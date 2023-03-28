@@ -5,9 +5,14 @@ const Card = (props) => {
 
     let total = 0;
     let totalShpping = 0;
+    let quantity = 0;
     for(const product of cart){
-        total = total + product.price;
+        if(product.quantity===0){
+            quantity = 1;
+        }
+        total = total + product.price * product.quantity;
         totalShpping = totalShpping + product.shipping;
+        quantity = quantity + product.quantity;
     }
     let tax = total*7/100;
     let GrandTotal = total + tax +totalShpping;

@@ -11,12 +11,14 @@ const Shop = () => {
  
      },[])
 
-    
+    const handleAddToCard = (product) =>{
+      console.log(product)
+    }
   return (
     <div className="shop-container">
       <div className="product-container"> 
      {
-       Products.map((product) => <Productes product={product}></Productes>)
+       Products.map((product) => <Productes product={product}> handleAddToCard={handleAddToCard}</Productes>)
      }
       </div>
       <div className="card-container">
